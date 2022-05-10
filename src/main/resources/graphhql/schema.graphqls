@@ -1,0 +1,29 @@
+type Manufacturer {
+    id: ID!
+    code: String!
+    name: String!
+    city: String!
+    state: String
+    country: String!
+    website: String!
+}
+
+type Models {
+    id: ID!
+    manufacturer: Manufacturer!
+    family: String!
+    model: String!
+    category: String!
+    caliber: String!
+    capacity: Int
+    barrelLength: Int
+    externalSafety: Boolean!
+    opticsReady: Boolean!
+    sights: String
+    color: String
+}
+
+type Query {
+    manufacturers: [Manufacturer]!
+    models: [Model]!
+}
