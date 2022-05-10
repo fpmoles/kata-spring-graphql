@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Model {
     @Id
     @Column(name="SKU")
-    private String id;
+    private String sku;
     @ManyToOne
     @JoinColumn(name="MANUFACTURER_ID", nullable = false, updatable = false)
     private Manufacturer manufacturer;
@@ -37,12 +37,12 @@ public class Model {
     @Column(name="COLOR")
     private String color;
 
-    public String getId() {
-        return id;
+    public String getSku() {
+        return sku;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSku(String id) {
+        this.sku = id;
     }
 
     public Manufacturer getManufacturer() {

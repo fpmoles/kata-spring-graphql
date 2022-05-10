@@ -6,10 +6,11 @@ type Manufacturer {
     state: String
     country: String!
     website: String!
+    models: [Model]
 }
 
-type Models {
-    id: ID!
+type Model {
+    sku: ID!
     manufacturer: Manufacturer!
     family: String!
     model: String!
