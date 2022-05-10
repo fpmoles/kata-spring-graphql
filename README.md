@@ -1,4 +1,4 @@
-# Kata: Spring Boot and GraphhQL
+# Kata: Spring Boot and GraphQL
 
 A simple kata for building a functioning GraphQL API using Spring Boot.
 
